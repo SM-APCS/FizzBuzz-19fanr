@@ -7,7 +7,7 @@ package fizzbuzz;
 
 /**
  *
- * @author Mr. T - CHANGE TO YOUR NAME
+ * @author Ruoming Fan - CHANGE TO YOUR NAME
  * @class AP CSA
  */
 public class FizzBuzz {
@@ -16,7 +16,29 @@ public class FizzBuzz {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        for(int i = 1; i <= 100; i++)
+        {
+            if(i % 3 == 0)
+            {
+                if(i % 5 == 0)
+                {
+                    System.out.println("fizz-buzz");
+                }
+                else
+                {
+                    System.out.println("fizz");
+                }
+            }
+            else if(i % 5 == 0)
+            {
+                System.out.println("buzz");
+            }
+            else
+            {
+                System.out.println(i);
+            }
+            
+        }
     }
     
 }
